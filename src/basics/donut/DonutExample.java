@@ -1,12 +1,12 @@
-package basics;
-
-import javax.swing.JFrame;
+package basics.donut;
 
 import java.awt.EventQueue;
 
-public class Application extends JFrame {
+import javax.swing.JFrame;
+
+public class DonutExample extends JFrame {
 	
-	public Application() {
+	public DonutExample() {
 		
 		initUI();
 	}
@@ -15,9 +15,9 @@ public class Application extends JFrame {
 		
 		add(new Board());
 		
-		setSize(250,250);
+		setSize(330, 330);
 		
-		setTitle("Application");
+		setTitle("Donut");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setLocationRelativeTo(null);
 	}
@@ -27,9 +27,10 @@ public class Application extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			@Override
 			public void run() {
-				Application ex = new Application();
+				DonutExample ex = new DonutExample();
 				ex.setVisible(true);
 			}
 		});
 	}
+	
 }
