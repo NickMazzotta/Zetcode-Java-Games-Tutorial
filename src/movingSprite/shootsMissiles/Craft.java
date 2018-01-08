@@ -1,4 +1,4 @@
-package movingSprite;
+package movingSprite.shootsMissiles;
 
 import java.awt.event.KeyEvent;
 import java.util.ArrayList;
@@ -46,7 +46,7 @@ public class Craft extends Sprite {
 	}
 	
 	public void fire() {
-		missiles.add(new Missile(x + width, x + height / 2));
+		missiles.add(new Missile(x + width, y + (height / 2)));
 	}
 	
 	public void keyReleased(KeyEvent e) {

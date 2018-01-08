@@ -1,4 +1,4 @@
-package movingSprite;
+package movingSprite.shootsMissiles;
 
 public class Missile extends Sprite {
 	

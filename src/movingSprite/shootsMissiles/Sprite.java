@@ -1,4 +1,4 @@
-package movingSprite;
+package movingSprite.shootsMissiles;
 
 import java.awt.Image;
 
