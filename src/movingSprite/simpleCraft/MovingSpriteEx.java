@@ -1,4 +1,4 @@
-package movingSprite;
+package movingSprite.simpleCraft;
 
 import java.awt.EventQueue;
 
