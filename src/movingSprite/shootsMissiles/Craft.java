@@ -36,11 +36,11 @@ public class Craft extends Sprite {
 		int key = e.getKeyCode();
 		
 		switch(key) {
-		case KeyEvent.VK_SPACE: fire();
-		case KeyEvent.VK_UP: dy = -1;
-		case KeyEvent.VK_DOWN: dy = 1;
-		case KeyEvent.VK_LEFT: dx = -1;
-		case KeyEvent.VK_RIGHT: dx = 1;
+		case KeyEvent.VK_SPACE: fire(); break;
+		case KeyEvent.VK_UP: dy = -1; break;
+		case KeyEvent.VK_DOWN: dy = 1; break;
+		case KeyEvent.VK_LEFT: dx = -1; break;
+		case KeyEvent.VK_RIGHT: dx = 1; break;
 		default: break;
 		}
 	}
@@ -56,7 +56,7 @@ public class Craft extends Sprite {
 		if (key == KeyEvent.VK_UP || key == KeyEvent.VK_DOWN) {
 			dy = 0;
 		} else if (key == KeyEvent.VK_LEFT || key == KeyEvent.VK_RIGHT) {
-			
+			dx = 0;
 		}
 	}
 	
